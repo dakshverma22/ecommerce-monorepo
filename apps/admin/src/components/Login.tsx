@@ -1,12 +1,8 @@
 import { Card, TextField, Typography, Button } from "@mui/material";
 import { useState } from "react";
 
-export const Signup = () => {
-  const [userInfo, setUserInfo] = useState({
-    username: "",
-    email: "",
-    password: "",
-  });
+export const Login = () => {
+  const [userInfo, setUserInfo] = useState({ username: "", password: "" });
 
   return (
     <>
@@ -31,7 +27,7 @@ export const Signup = () => {
           }}
         >
           <Typography variant="h5" style={{ textAlign: "center" }}>
-            Register as Administrator
+            Admin Login
           </Typography>
           <TextField
             id="outlined-basic"
@@ -41,17 +37,11 @@ export const Signup = () => {
           />
           <TextField
             id="outlined-basic"
-            label="Email"
-            variant="outlined"
-            value={userInfo.email}
-          />
-          <TextField
-            id="outlined-basic"
             label="Password"
             variant="outlined"
             value={userInfo.password}
           />
-          <Button>Signup</Button>
+          <Button>Login</Button>
         </Card>
       </div>
     </>
