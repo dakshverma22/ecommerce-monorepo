@@ -3,7 +3,7 @@ import {
   signupData,
   createProductData,
   updateProductData,
-} from "./../middleware/typeCheck";
+} from "../middleware/typeCheck";
 import { Router } from "express";
 import jwt from "jsonwebtoken";
 
